@@ -11,8 +11,10 @@ st.set_page_config(layout="wide")
 password = st.text_input("비밀번호를 입력하세요:", type="password")
 correct_password = st.secrets["password"]
 
-# 입력된 비밀번호가 올바른지 확인합니다.
+# 입력된 비밀번호가 정확한지 확인
 if password == correct_password:
+    st.success("비밀번호 인증 성공!")
+    
     st.title("제안서 작성 보조")
     
     # 문제 상황과 해결책을 입력받습니다.

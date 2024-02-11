@@ -11,9 +11,8 @@ password = st.text_input("비밀번호를 입력하세요:", type="password")
 correct_password = st.secrets["password"]
 
 # 입력된 비밀번호가 정확한지 확인
-if password != correct_password:
-    st.error("비밀번호가 틀렸습니다. 올바른 비밀번호를 입력해주세요.")
-    st.stop()
+if password == correct_password:
+    st.success("비밀번호 인증 성공!")
 
 with st.sidebar:
     # 스레드 ID 관리
