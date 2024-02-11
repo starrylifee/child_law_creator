@@ -16,7 +16,7 @@ if password == correct_password:
     st.success("비밀번호 인증 성공!")
 
     # 발표문 입력
-    presentation_text = st.text_area("발표문을 입력하세요:", height=300)
+    presentation_text = st.text_area("발표문을(전체 혹은 일부) 입력하세요.", height=300)
 
     # 이미지 스타일 선택
     image_style = st.selectbox("이미지 스타일 선택", ["사실적", "미니멀 일러스트레이션", "만화적"])
