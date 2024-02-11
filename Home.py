@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 홈 페이지의 타이틀 설정
-st.title('🛠 자치활동 인공지능 보조도구 모음 홈페이지')
+st.title('🛠 자치활동 보조 인공지능도구 모음 홈페이지')
 
 # 애플리케이션 소개
 st.markdown("""
