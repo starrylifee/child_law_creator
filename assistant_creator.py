@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 
-client = OpenAI(api_key=st.secrets["api_key"])
+client = OpenAI(api_key=st.secrets["api_key1"])
 
 # 'file' 폴더 안에 있는 여러 파일 경로
 file_paths = [
