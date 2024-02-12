@@ -3,7 +3,7 @@ from openai import OpenAI
 from io import BytesIO  # 파일 다운로드를 위해 필요
 
 # OpenAI 클라이언트 객체 생성
-client = OpenAI(api_key=st.secrets["api_key"])
+client = OpenAI(api_key=st.secrets["api_key4"])
 
 st.set_page_config(layout="wide")
 

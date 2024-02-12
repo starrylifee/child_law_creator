@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # OpenAI 객체 생성 및 API 키 제공
-client = OpenAI(api_key=st.secrets["api_key"])
+client = OpenAI(api_key=st.secrets["api_key6"])
 
 # 페이지 레이아웃 설정
 st.set_page_config(layout="wide")
