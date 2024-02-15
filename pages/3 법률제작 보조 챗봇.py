@@ -4,7 +4,7 @@ import time
 
 # 업데이트된 Assistant ID
 assistant_id = "asst_Nwvbz4Fzq5RwxA7rhZuiLqY3"
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=st.secrets["api_key3"])
 
 # 비밀번호 입력
 password = st.text_input("비밀번호를 입력하세요:", type="password")
