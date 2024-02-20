@@ -37,9 +37,9 @@ if password == correct_password:
     # 스레드 ID 입력란을 자동으로 업데이트
     thread_id = st.text_input("Thread ID", value=st.session_state.thread_id)
 
-    st.title("법률제작 보조 챗봇")
+    st.title("안건 제안 보조 챗봇")
     if "messages" not in st.session_state:
-        st.session_state["messages"] = [{"role": "assistant", "content": "안녕하세요, 저는 법률 제작 봇입니다. 어떻게 도와드릴까요?"}]
+        st.session_state["messages"] = [{"role": "assistant", "content": "안녕하세요, 저는 안건 제안 보조 챗봇입니다. 어떻게 도와드릴까요?"}]
 
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).write(msg["content"])
