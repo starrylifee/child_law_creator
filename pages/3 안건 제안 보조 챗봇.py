@@ -39,7 +39,7 @@ if password == correct_password:
 
     st.title("안건 제안 보조 챗봇")
     if "messages" not in st.session_state:
-        st.session_state["messages"] = [{"role": "assistant", "content": "안녕하세요, 저는 안건 제안 보조 챗봇입니다. 어떻게 도와드릴까요?"}]
+        st.session_state["messages"] = [{"role": "assistant", "content": "안녕하세요, 저는 안건 제안 보조 챗봇입니다. 먼저 왼쪽의 Thread 생성버튼을 눌러주세요. 무엇을 도와드릴까요?"}]
 
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).write(msg["content"])
