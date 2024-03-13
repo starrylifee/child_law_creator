@@ -19,8 +19,8 @@ if password == correct_password:
     st.title("발표문 생성기")
 
     # 대상 선택
-    st.header("발표 대상 선택")
-    audience = st.radio("발표의 대상을 선택하세요:", ('어린이', '청소년', '성인'))
+    st.header("청중 선택")
+    audience = st.radio("청중을 선택하세요:", ('어린이', '청소년', '성인'))
 
     # 발표 시간 선택
     st.header("발표 시간 선택")
