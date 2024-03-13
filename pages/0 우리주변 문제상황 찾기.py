@@ -37,7 +37,7 @@ if uploaded_file is not None:
   model = genai.GenerativeModel('gemini-pro-vision')
 
   # Generate content
-  response = model.generate_content(["이 사진은 우리 주변의 일상적인 사진입니다. 학생이 사진을 업로드 하면, 그 사진 속에서 발견할 수 있는 사회적 문제를 추출해 주세요. 위험, 어려움, 생태, 사회구조적문제 등 어떤 것이어도 좋습니다. 학생의 아이디어를 생성할 수 있도록 많은 이야기를 해주세요.", img])
+  response = model.generate_content(["이 사진은 우리 주변 일상적인 사진입니다. 학생이 사진을 업로드 하면, 그 사진 속에서 발견할 수 있는 사회적 문제를 추출해 주세요. 위험, 어려움, 생태, 사회구조적문제 등 어떤 것이어도 좋습니다. 학생의 아이디어를 생성할 수 있도록 많은 이야기를 해주세요.", img])
 
   # Resolve the response
   response.resolve()
