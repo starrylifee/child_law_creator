@@ -1,10 +1,28 @@
 from openai import OpenAI
 import streamlit as st
 import time
+import random
+
+# secrets.toml에 저장된 API 키들을 리스트로 준비
+api_keys = [
+    st.secrets["api_key1"],
+    st.secrets["api_key2"],
+    st.secrets["api_key3"],
+    st.secrets["api_key4"],
+    st.secrets["api_key5"],
+    st.secrets["api_key6"]
+]
+
+# 세션 상태에서 현재 API 키를 관리
+if 'api_key' not in st.session_state:
+    # API 키를 랜덤하게 선택하여 세션 상태에 저장
+    st.session_state.api_key = random.choice(api_keys)
+
+client = OpenAI(api_key=st.session_state.api_key)
+
 
 # 업데이트된 Assistant ID
 assistant_id = "asst_vZTRHlvQaJKp9T8miz5g4RNU"
-client = OpenAI(api_key=st.secrets["api_key3"])
 
 with st.sidebar:
     # 스레드 ID 관리
