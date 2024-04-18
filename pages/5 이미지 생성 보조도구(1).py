@@ -1,8 +1,23 @@
 import streamlit as st
 from openai import OpenAI
+import random
 
-# OpenAI 객체 생성 및 API 키 제공
-client = OpenAI(api_key=st.secrets["api_key5"])
+# secrets.toml에 저장된 API 키들을 리스트로 준비
+api_keys = [
+    st.secrets["api_key1"],
+    st.secrets["api_key2"],
+    st.secrets["api_key3"],
+    st.secrets["api_key4"],
+    st.secrets["api_key5"],
+    st.secrets["api_key6"]
+]
+
+# 세션 상태에서 현재 API 키를 관리
+if 'api_key' not in st.session_state:
+    # API 키를 랜덤하게 선택하여 세션 상태에 저장
+    st.session_state.api_key = random.choice(api_keys)
+
+client = OpenAI(api_key=st.session_state.api_key)
 
 # 페이지 레이아웃 설정
 st.set_page_config(layout="wide")
