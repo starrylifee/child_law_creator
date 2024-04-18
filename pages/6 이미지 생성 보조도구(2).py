@@ -7,6 +7,8 @@ client = OpenAI(api_key=st.secrets["api_key6"])
 # 페이지 레이아웃 설정
 st.set_page_config(layout="wide")
 
+st.title("이미지 생성 보조 도구(2)")
+
 # 발표문 입력
 presentation_text = st.text_area("발표문을(전체 혹은 일부) 입력하세요.", height=300)
 
