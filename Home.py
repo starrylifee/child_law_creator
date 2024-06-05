@@ -39,5 +39,19 @@ st.markdown("""
 """)
 
 st.markdown("""
-    ## 비밀번호는 선생님에게 물어보세요.
+    ## 여러분의 자치 활동을 응원합니다!
 """)
+
+# 파일 다운로드 링크 추가
+st.markdown("""
+    ## 📥 파일 다운로드
+""")
+
+if st.button('인공지능을 이용한 학생자치 보조 프로그램 가이드북(학생용) 다운로드'):
+    st.markdown('<a href="https://drive.google.com/file/d/1f5dQCAgaK7mphBjZ0yZZ0hfAhRNVifQO/view?usp=drive_link">다운로드</a>', unsafe_allow_html=True)
+
+if st.button('인공지능을 이용한 학생자치 보조 프로그램 가이드북(교사용) 다운로드'):
+    st.markdown('<a href="https://drive.google.com/file/d/1RrnuQ8RY1foqR1-fgxng8JZsGDOxupZe/view?usp=drive_link">다운로드</a>', unsafe_allow_html=True)
+
+if st.button('인공지능을 활용한 학생자치 수업자료(사례집) 다운로드'):
+    st.markdown('<a href="https://drive.google.com/file/d/1mejb3JY2uxzAbYcxDppx8EpKmny_6fJf/view?usp=drive_link">다운로드</a>', unsafe_allow_html=True)
