@@ -51,4 +51,4 @@ st.markdown("""
     3. [인공지능을 활용한 학생자치 수업자료(사례집)](https://drive.google.com/file/d/1mejb3JY2uxzAbYcxDppx8EpKmny_6fJf/view?usp=drive_link)
 """)
 
-st.image("file/knlogo.png")
+st.image("file/knlogo2.png")
