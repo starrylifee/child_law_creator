@@ -50,3 +50,5 @@ st.markdown("""
     2. [인공지능을 이용한 학생자치 보조 프로그램 가이드북(교사용)](https://drive.google.com/file/d/1RrnuQ8RY1foqR1-fgxng8JZsGDOxupZe/view?usp=drive_link)
     3. [인공지능을 활용한 학생자치 수업자료(사례집)](https://drive.google.com/file/d/1mejb3JY2uxzAbYcxDppx8EpKmny_6fJf/view?usp=drive_link)
 """)
+
+st.image("files/knlogo.png")
