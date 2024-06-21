@@ -13,24 +13,34 @@ st.markdown("""
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader('1. 제안서 생성 보조도구')
-    st.write('이 도구를 사용하면, 제안서를 쉽고 빠르게 작성할 수 있습니다.')
+    st.subheader('1. 우리주변 문제상황 찾기')
+    st.write('이 도구를 사용하면 사진을 통해 우리 주변의 문제상황을 찾을 수 있습니다.')
 
 with col2:
-    st.subheader('2. 발표문 생성 보조도구')
-    st.write('발표 준비에 도움이 필요하신가요? 이 도구가 도와드립니다.')
+    st.subheader('2. 제안서 생성 보조도구')
+    st.write('이 도구를 사용하면, 제안서를 쉽고 빠르게 작성할 수 있습니다.')
 
 col3, col4 = st.columns(2)
 
 with col3:
-    st.subheader('3. 안건 제안 보조 챗봇 & 보조도구')
+    st.subheader('3. 발표문 생성 보조도구')
+    st.write('발표 준비에 도움이 필요하신가요? 이 도구가 도와드립니다.')
+
+with col4:
+    st.subheader('4. 안건 제안 보조 챗봇 & 보조도구')
     st.write('보조챗봇을 통해 법률안과 제안서에 대한 이해를 높일 수 있습니다. 챗봇과의 대화를 통해 아이디어를 만들어보세요.')
     st.write('보조도구를 통해 법률안을 만들 수 있습니다.')
 
-with col4:
-    st.subheader('4. 이미지 생성 보조도구')
+col5, col6 = st.columns(2)
+
+with col5:
+    st.subheader('5. 이미지 생성 보조도구')
     st.write('텍스트 설명을 바탕으로 이미지를 생성합니다.')
     st.markdown('**주의:** 이미지 생성요청이 한번에 몰릴 경우 이미지생성오류가 있을 수 있습니다.')
+
+with col6:
+    st.subheader('6. 경남교육청 업무안내')
+    st.write('키워드나 업무, 부서를 검색할 수 있습니다.')
 
 # 추가적인 정보 제공
 st.markdown("""
@@ -51,4 +61,5 @@ st.markdown("""
     3. [인공지능을 활용한 학생자치 수업자료(사례집)](https://drive.google.com/file/d/1mejb3JY2uxzAbYcxDppx8EpKmny_6fJf/view?usp=drive_link)
 """)
 
+# 이미지 경로 절대 경로로 수정
 st.image("file/knlogo2.jpg")
