@@ -33,7 +33,6 @@ if 'api_key' not in st.session_state:
 client = OpenAI(api_key=st.session_state.api_key)
 
 # 페이지 레이아웃 설정
-st.set_page_config(layout="wide")
 
 st.title("이미지 생성 보조 도구(1)")
 

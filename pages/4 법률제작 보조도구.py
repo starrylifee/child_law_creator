@@ -33,8 +33,6 @@ if 'api_key' not in st.session_state:
 
 client = OpenAI(api_key=st.session_state.api_key)
 
-st.set_page_config(layout="wide")
-
 st.title("법률안 작성 보조 도구")
 
 # 사용자로부터 필요한 정보를 입력받습니다.

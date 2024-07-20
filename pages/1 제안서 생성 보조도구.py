@@ -32,8 +32,6 @@ if 'api_key' not in st.session_state:
     st.session_state.api_key = random.choice(api_keys)
 
 client = OpenAI(api_key=st.session_state.api_key)
-
-st.set_page_config(layout="wide")
     
 st.title("제안서 작성 보조")
 
