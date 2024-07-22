@@ -3,6 +3,19 @@ from openai import OpenAI
 from io import BytesIO
 import random
 
+hide_github_icon = """
+    <style>
+    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK{ display: none; }
+    #MainMenu{ visibility: hidden; }
+    footer { visibility: hidden; }
+    header { visibility: hidden; }
+    </style>
+"""
+
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 # secrets.toml에 저장된 API 키들을 리스트로 준비
 api_keys = [
     st.secrets["api_key1"],
@@ -65,7 +78,8 @@ def generate_speech(proposal, law, audience, presentation_time):
 
 # 발표문 생성 버튼
 if st.button("발표문 생성하기"):
-    speech = generate_speech(proposal, law, audience, presentation_time)
+    with st.spinner("발표문을 생성중입니다. 잠시만 기다려주세요..."):
+        speech = generate_speech(proposal, law, audience, presentation_time)
     st.subheader("생성된 발표문")
     st.write(speech)
 
