@@ -55,7 +55,7 @@ def generate_law_document(problem, ideal, solution, government_action, penalties
     추가 내용: {additional_content}'''
 
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": persona},
             {"role": "user", "content": "법률안을 작성해주세요."}

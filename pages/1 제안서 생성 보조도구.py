@@ -37,7 +37,7 @@ def generate_proposal(problem, solution):
     이 프롬프트는 사용자로부터 제공된 문제 상황과 해결 방안을 바탕으로, 체계적이고 전문적인 제안서를 생성하는 데 도움을 주는 GPT 모델입니다. 제안서는 '제안배경'과 '주요내용' 두 필수 카테고리를 포함해야 합니다. '제안배경' 아래에는 개조식으로 제안서를 제안한 배경을 주요 사건이나 통계등을 반드시 언급하며 간략하지만 명료하게 제시해야 합니다. '주요내용' 아래에는 개조식으로 제안 배경을 해결할 방법을 간단하고 명료하게 제시해야 합니다. 이 제안서는 시민이 공공기관에 제출할 내용으로 문제상황에 대한 해결방안을 공공기관에게 요청하는 내용을 담아야 합니다. 다음은 사용자가 제공한 문제 상황과 해결 방안입니다: 문제 상황: {problem} 해결 방안: {solution}'''
 
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": persona},
             {"role": "user", "content": "제안서를 작성해주세요."}

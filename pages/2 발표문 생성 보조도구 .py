@@ -53,7 +53,7 @@ def generate_speech(proposal, law, audience, presentation_time):
 
     # chat_completions.create 메소드를 사용한 호출로 변경
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         messages=[{"role": "system", "content": prompt}],
         max_tokens=time_to_tokens[presentation_time],
         temperature=0.7,
