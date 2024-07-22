@@ -48,7 +48,7 @@ if uploaded_file is not None:
         # bytes 타입의 이미지 데이터를 PIL.Image.Image 객체로 변환
         img = Image.open(io.BytesIO(img_bytes))
 
-        model = genai.GenerativeModel('gemini-pro-vision')
+        model = genai.GenerativeModel('gemini-1.5-flash')
 
         # Generate content
         response = model.generate_content(["이 사진은 우리 주변 일상적인 사진입니다. 학생이 사진을 업로드 하면, 그 사진 속에서 발견할 수 있는 사회적 문제를 추출해 주세요. 위험, 어려움, 생태, 사회구조적문제 등 어떤 것이어도 좋습니다. 학생의 아이디어를 생성할 수 있도록 많은 이야기를 해주세요.", img])
